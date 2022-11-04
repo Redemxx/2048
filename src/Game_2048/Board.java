@@ -8,6 +8,12 @@ public class Board {
     private LinkedList<LinkedList<Tile>> board;
     private int boardSize;
 
+//    Properties
+    public int get_boardSize() {
+        return boardSize;
+    }
+
+//    Constructors
     public Board() {
         this.boardSize = 4;
         instantiateBoard();
