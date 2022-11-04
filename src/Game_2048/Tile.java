@@ -3,6 +3,14 @@ package Game_2048;
 public class Tile {
     private int value;
 
+    public Tile() {
+        value = 2;
+    }
+
+    public Tile(int value) {
+        setValue(value);
+    }
+
     /**
      * Returns the current value of the tile.
      * @return int value of the tile.
@@ -23,20 +31,12 @@ public class Tile {
             throw new IllegalArgumentException();
     }
 
-    public Tile() {
-        value = 2;
-    }
-
-    public Tile(int value) {
-        setValue(value);
-    }
-
     /**
      * Recursively finds if a value is a multiple of 2
      * @param value Double value to check.
      * @return Boolean; true if a multiple of 2, false if not.
      */
-    public boolean power2(double value) {
+    public static boolean power2(double value) {
         if (value == 2)
             return true;
         if (value < 2)
