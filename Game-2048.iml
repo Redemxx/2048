@@ -17,5 +17,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="WeissLinkedList" level="project" />
   </component>
 </module>

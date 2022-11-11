@@ -1,5 +1,3 @@
-package Game_2048;
-
 public class Tile {
     private int value;
 

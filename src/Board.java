@@ -1,7 +1,3 @@
-package Game_2048;
-
-import java.util.Base64;
-
 public class Board {
     private static final int boardSize_min = 4;
     private static final int boardSize_max = 10;

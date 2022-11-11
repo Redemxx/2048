@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WeissLinkedList">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../GenericLibraries/WeissLinkedList.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
