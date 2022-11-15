@@ -60,6 +60,11 @@ public class Board {
         board.get(row).set(col, t);
     }
 
+    public void removeTile(int row, int col) {
+        checkPosition(row, col);
+        board.get(row).set(col, null);
+    }
+
     public int getValue(int row, int col) {
         checkPosition(row, col);
 
@@ -70,5 +75,18 @@ public class Board {
 
         return t.getValue();
     }
+
+    public String printBoard() {
+        String st = "";
+        for (int row = 0; row < boardSize; row++) {
+            for (int col = 0; col < boardSize; col++) {
+                st += getValue(row, col) + "\t";
+            }
+            st += "\n";
+        }
+        System.out.println(st);
+        return st;
+    }
+
 }
 
